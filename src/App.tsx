@@ -350,7 +350,7 @@ function App() {
       <header className="bg-white dark:bg-[#18181b] border-b dark:border-zinc-800 px-6 py-4 flex items-center justify-between transition-colors">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-sm shadow-blue-200 dark:shadow-none">
-            J
+            P
           </div>
           <div>
             <h1 className="text-xl font-bold bg-gradient-to-r from-blue-700 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
