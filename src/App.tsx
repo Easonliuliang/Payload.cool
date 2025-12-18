@@ -11,6 +11,7 @@ import { Breadcrumbs } from './components/Breadcrumbs'
 import { SchemaSettings, SchemaConfig } from './components/SchemaSettings'
 import { useJsonWorker } from './hooks/useJsonWorker'
 import { useLocalStorage } from './hooks/useLocalStorage'
+import { SeoContent } from './components/SeoContent'
 import { APP_NAME } from './constants'
 import yaml from 'js-yaml'
 import Papa from 'papaparse'
@@ -444,7 +445,12 @@ function App() {
           />
           
           {/* Privacy Footer & Roadmap Link */}
-          <div className="bg-zinc-50 dark:bg-[#18181b] border-t dark:border-zinc-800 py-1 flex items-center justify-between px-4">
+          <div className="bg-zinc-50 dark:bg-[#18181b] border-t dark:border-zinc-800 py-2 flex flex-col md:flex-row items-center justify-between px-4 gap-2">
+             <div className="flex items-center gap-4 text-[10px] text-zinc-400 dark:text-zinc-600">
+               <a href="/privacy.html" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</a>
+               <a href="/terms.html" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</a>
+               <a href="/about.html" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</a>
+             </div>
              <div className="flex-1 text-center">
                 <p className="text-xs text-zinc-400 dark:text-zinc-600 font-medium hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors cursor-default">
                   Payload.cool — Privacy-first tools for inspecting and debugging data payloads.
@@ -455,6 +461,9 @@ function App() {
              </div>
           </div>
         </div>
+        
+        {/* SEO Content Section */}
+        <SeoContent />
       </main>
       
       <SchemaSettings 
