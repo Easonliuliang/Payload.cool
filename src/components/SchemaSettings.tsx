@@ -45,9 +45,22 @@ export function SchemaSettings({ isOpen, onClose, config, onSave, isDark }: Sche
 
   if (!isOpen) return null
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (activeTab === 'url') {
       if (!url.trim()) return
+      
+      // Basic URL Validation
+      try {
+        new URL(url.trim())
+      } catch (e) {
+        alert('Invalid URL format')
+        return
+      }
+
+      // Optional: Check if URL is reachable (HEAD request)
+      // This is a "nice to have" check, not blocking because of CORS potentially
+      // We mainly rely on Monaco's internal fetch, but we can warn the user.
+      
       onSave({ type: 'url', url: url.trim() })
     } else if (activeTab === 'json') {
       try {

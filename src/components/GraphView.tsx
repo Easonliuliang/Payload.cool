@@ -156,7 +156,7 @@ const generateGraphFromJSON = (data: any) => {
     if (isObject) {
       Object.entries(obj).forEach(([key, value]) => {
         // Limit recursion for massive objects to prevent crashes
-        if (nodes.length < 500) {
+        if (nodes.length < 500 && path.length < 50) { // Limit depth to 50
           // Construct new path: if array, key is index (number), else string
           const nextPath = [...path, isArray ? parseInt(key) : key]
           traverse(value, currentId, key, nextPath)

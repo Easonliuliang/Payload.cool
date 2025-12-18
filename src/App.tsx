@@ -358,6 +358,9 @@ function App() {
           </div>
         </div>
         <div className="flex items-center gap-4 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+          <a href="https://github.com/eason/jason.cool/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+            v1.0.0
+          </a>
           <div className="flex items-center gap-1.5 px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-help" title="Your data never leaves your browser">
             <Shield className="w-3.5 h-3.5 text-emerald-500" />
             <span>Local-only</span>
@@ -390,10 +393,10 @@ function App() {
             onExport={handleExport}
             isDark={isDark}
             onToggleTheme={toggleTheme}
-        onSchemaClick={() => setIsSchemaModalOpen(true)}
-        isSchemaActive={schemaConfig.type !== 'none'}
-        jsonSize={jsonSize}
-      />
+            onSchemaClick={() => setIsSchemaModalOpen(true)}
+            isSchemaActive={schemaConfig.type !== 'none'}
+            jsonSize={jsonSize}
+          />
           
           {(viewMode === 'tree' || viewMode === 'split' || viewMode === 'graph') && (
             <QueryBar onQuery={handleQuery} isDark={isDark} />
@@ -439,11 +442,16 @@ function App() {
             className="border-t dark:border-zinc-800"
           />
           
-          {/* Privacy Footer */}
-          <div className="bg-zinc-50 dark:bg-[#18181b] border-t dark:border-zinc-800 py-1 text-center">
-             <p className="text-xs text-zinc-400 dark:text-zinc-600 font-medium hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors cursor-default">
-               All processing happens locally. Your data never leaves your browser.
-             </p>
+          {/* Privacy Footer & Roadmap Link */}
+          <div className="bg-zinc-50 dark:bg-[#18181b] border-t dark:border-zinc-800 py-1 flex items-center justify-between px-4">
+             <div className="flex-1 text-center">
+                <p className="text-xs text-zinc-400 dark:text-zinc-600 font-medium hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors cursor-default">
+                  All processing happens locally. Your data never leaves your browser.
+                </p>
+             </div>
+             <div className="text-[10px] text-zinc-300 dark:text-zinc-700">
+               Coming in v1.1: Generate Example Data
+             </div>
           </div>
         </div>
       </main>
