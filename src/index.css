@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  /* Tree View Dark Mode Overrides */
+  .dark .jv-container {
+    background-color: transparent !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    /* React18-JSON-View Standard Classes Support */
+  .dark .json-view {
+    background-color: transparent !important;
+    color: #e4e4e7 !important;
+  }
+  
+  .dark .json-view--property {
+    color: #60a5fa !important;
+  }
+  
+  .dark .json-view--string {
+    color: #a7f3d0 !important;
+  }
+  
+  .dark .json-view--number {
+    color: #f87171 !important;
+  }
+  
+  .dark .json-view--boolean {
+    color: #818cf8 !important;
+  }
+  
+  .dark .json-view--null {
+    color: #a1a1aa !important;
+  }
+  
+  .dark .json-view--pair:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+  }
+}
+
+  .dark .jv-key {
+    color: #60a5fa !important; /* blue-400 - brighter blue for keys */
+  }
+
+  .dark .jv-string {
+    color: #a7f3d0 !important; /* emerald-200 - soft green for strings */
+  }
+
+  .dark .jv-number {
+    color: #f87171 !important; /* red-400 - clear red for numbers */
+  }
+
+  .dark .jv-boolean {
+    color: #818cf8 !important; /* indigo-400 - purple for booleans */
+  }
+
+  .dark .jv-null {
+    color: #a1a1aa !important; /* zinc-400 - grey for null */
+  }
+
+  .dark .jv-item {
+    color: #e4e4e7 !important; /* zinc-200 - default text */
+  }
+  
+  .dark .jv-ellipsis {
+    background-color: #27272a !important; /* zinc-800 */
+    color: #a1a1aa !important;
+  }
+
+  .dark .jv-chevron {
+    color: #71717a !important; /* zinc-500 */
+  }
+
+  /* Light Mode Overrides for consistency */
+  .jv-container {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  }
+
+  .jv-key {
+    color: #2563eb !important; /* blue-600 */
+  }
+
+  .jv-string {
+    color: #059669 !important; /* emerald-600 */
+  }
+  
+  .jv-number {
+    color: #dc2626 !important; /* red-600 */
+  }
+}
