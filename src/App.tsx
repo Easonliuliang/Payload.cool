@@ -447,7 +447,7 @@ function App() {
           <div className="bg-zinc-50 dark:bg-[#18181b] border-t dark:border-zinc-800 py-1 flex items-center justify-between px-4">
              <div className="flex-1 text-center">
                 <p className="text-xs text-zinc-400 dark:text-zinc-600 font-medium hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors cursor-default">
-                  All processing happens locally. Your data never leaves your browser.
+                  Payload.cool — Privacy-first tools for inspecting and debugging data payloads.
                 </p>
              </div>
              <div className="text-[10px] text-zinc-300 dark:text-zinc-700">
