@@ -1,4 +1,4 @@
-# JSON.cool
+# Payload.cool
 
 **JSON Formatter & Validator (Privacy‑First, Browser‑Only)**
 
@@ -12,7 +12,7 @@ Author: **Eason**
 
 ### 1.1 Background
 
-**JSON.cool** is an online JSON Formatter & Validator designed for developers who need a **fast, private, and zero‑friction** way to debug JSON data.
+**Payload.cool** is an online JSON Formatter & Validator designed for developers who need a **fast, private, and zero‑friction** way to debug JSON data.
 
 By the end of 2025, JSON remains the de‑facto standard for:
 
@@ -27,9 +27,9 @@ However, existing tools such as **jsonformatter.org**, **jsonlint.com**, and **c
 * Outdated or cluttered UI
 * Limited advanced views (Diff, deep Tree interaction)
 
-**JSON.cool** addresses these issues by running **100% in the browser**, with **no data upload, no login, and no server‑side parsing**.
+**Payload.cool** addresses these issues by running **100% in the browser**, with **no data upload, no login, and no server‑side parsing**.
 
-> JSON.cool is not a copycat formatter — it is a *developer‑grade JSON debugging workspace* optimized for daily use.
+> Payload.cool is not a copycat formatter — it is a *developer‑grade JSON debugging workspace* optimized for daily use.
 
 ---
 
@@ -231,7 +231,7 @@ Deployment:
 | jsonlint.com      | No Tree View, no Diff                |
 | curiousconcept    | Outdated UI, weak UX                 |
 
-### 4.2 JSON.cool Advantages
+### 4.2 Payload.cool Advantages
 
 * **Privacy by Design** — no upload; optional local state (theme + diff baseline) stored in `localStorage`
 * **Advanced Visualization** — Tree + Diff
@@ -248,11 +248,11 @@ SEO positioning:
 
 ### Phase 1 — Setup (Day 1)
 
-* Register domain `json.cool`
+* Register domain `payload.cool`
 * Initialize project:
 
   ```bash
-  npx create-vite json-cool --template react-ts
+  npx create-vite payload-cool --template react-ts
   ```
 * Setup Tailwind & shadcn/ui
 
@@ -354,5 +354,5 @@ Monitoring:
 
 ---
 
-> This document is the **single source of truth** for building JSON.cool.
+> This document is the **single source of truth** for building Payload.cool.
 > Ship fast, stay minimal, and let data validate every iteration.

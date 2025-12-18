@@ -11,6 +11,7 @@ import { Breadcrumbs } from './components/Breadcrumbs'
 import { SchemaSettings, SchemaConfig } from './components/SchemaSettings'
 import { useJsonWorker } from './hooks/useJsonWorker'
 import { useLocalStorage } from './hooks/useLocalStorage'
+import { APP_NAME } from './constants'
 import yaml from 'js-yaml'
 import Papa from 'papaparse'
 
@@ -18,7 +19,7 @@ const DEFAULT_JSON = `// Paste JSON here
 // ✔ No upload  ✔ Schema validation  ✔ Large files supported
 
 {
-  "name": "JSON.cool",
+  "name": "${APP_NAME}",
   "version": "1.0.0",
   "features": [
     "Privacy-first",
@@ -353,7 +354,7 @@ function App() {
           </div>
           <div>
             <h1 className="text-xl font-bold bg-gradient-to-r from-blue-700 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
-              JSON.cool
+              {APP_NAME}
             </h1>
           </div>
         </div>

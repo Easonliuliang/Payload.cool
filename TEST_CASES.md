@@ -7,7 +7,7 @@ A flat object with basic data types. Good for testing basic formatting and editi
 
 ```json
 {
-  "name": "JSON.cool",
+  "name": "Payload.cool",
   "version": 1,
   "active": true,
   "description": "A privacy-first JSON tool",
