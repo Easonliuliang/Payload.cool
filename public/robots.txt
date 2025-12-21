@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://payload-cool.vercel.app/sitemap.xml
