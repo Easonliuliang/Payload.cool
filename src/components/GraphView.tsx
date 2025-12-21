@@ -83,11 +83,11 @@ const generateGraphFromJSON = (data: any) => {
     const isObject = typeof obj === 'object' && obj !== null
     const isArray = Array.isArray(obj)
     
-    let displayLabel = label
+    // let displayLabel = label
     let type = typeof obj
     
-    if (isArray) type = `array[${obj.length}]`
-    else if (obj === null) type = 'null'
+    if (isArray) type = 'array' as any // simplified for display
+    else if (obj === null) type = 'null' as any
     
     // For primitive values, show the value
     let valueStr = ''

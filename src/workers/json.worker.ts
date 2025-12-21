@@ -1,11 +1,13 @@
 import { parse, printParseErrorCode, type ParseError } from 'jsonc-parser'
 import yaml from 'js-yaml'
+import jmespath from 'jmespath'
 
 type WorkerRequest =
   | { requestId: number; type: 'PARSE'; payload: string }
   | { requestId: number; type: 'STRINGIFY'; payload: { data: any; space?: number } }
   | { requestId: number; type: 'YAML_LOAD'; payload: string }
   | { requestId: number; type: 'YAML_DUMP'; payload: any }
+  | { requestId: number; type: 'QUERY'; payload: { data: any; query: string } }
 
 self.onmessage = async (e: MessageEvent<WorkerRequest>) => {
   const { requestId, type, payload } = e.data

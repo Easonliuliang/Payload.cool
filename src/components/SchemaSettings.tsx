@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { X, Globe, FileJson, Package, Check, AlertCircle } from 'lucide-react'
+import { X, Globe, FileJson, Package, Check } from 'lucide-react'
 import { cn } from '../lib/utils'
 
 export type SchemaConfig = 

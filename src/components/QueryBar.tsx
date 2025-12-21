@@ -1,5 +1,5 @@
 import { Search, X } from "lucide-react"
-import { Button } from "./ui/button"
+// import { Button } from "./ui/button"
 import { useEffect, useState } from "react"
 
 interface QueryBarProps {
@@ -7,7 +7,7 @@ interface QueryBarProps {
   isDark: boolean
 }
 
-export function QueryBar({ onQuery, isDark }: QueryBarProps) {
+export function QueryBar({ onQuery }: QueryBarProps) {
   const [value, setValue] = useState("")
 
   useEffect(() => {

@@ -1,5 +1,5 @@
 import Editor, { OnMount, OnValidate } from "@monaco-editor/react"
-import { useEffect, useRef, forwardRef, useImperativeHandle, useCallback } from "react"
+import { useEffect, useRef, forwardRef, useImperativeHandle } from "react"
 import { getLocation, parseTree, findNodeAtLocation } from "jsonc-parser"
 import { SchemaConfig } from "./SchemaSettings"
 import debounce from "lodash.debounce"
