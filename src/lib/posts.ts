@@ -10,7 +10,7 @@ export interface Post {
 }
 
 export function getAllPosts(): Post[] {
-  const modules = import.meta.glob('../posts/*.md', { as: 'raw', eager: true })
+  const modules = import.meta.glob('../posts/*.md', { query: '?raw', import: 'default', eager: true })
   
   const posts = Object.entries(modules).map(([path, content]) => {
     // gray-matter works in browser but sometimes requires Buffer. 
