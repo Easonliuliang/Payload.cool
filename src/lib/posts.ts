@@ -14,8 +14,7 @@ export function getAllPosts(): Post[] {
   
   const posts = Object.entries(modules).map(([path, content]) => {
     // gray-matter works in browser but sometimes requires Buffer. 
-    // If it fails, we might need a simpler parser, but let's try standard way first.
-    // For simple frontmatter, we can also use a simple regex if gray-matter is too heavy/buggy in browser.
+    // We polyfilled Buffer in main.tsx and cast content to string here.
     
     try {
         const { data, content: markdownContent } = matter(content as string)
