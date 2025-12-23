@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DOMAIN = 'https://payload-cool.vercel.app';
+const DOMAIN = 'https://payload.cool';
 
 const formatDate = (date) => {
   return date.toISOString().split('T')[0];
