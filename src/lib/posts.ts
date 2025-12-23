@@ -18,7 +18,7 @@ export function getAllPosts(): Post[] {
     // For simple frontmatter, we can also use a simple regex if gray-matter is too heavy/buggy in browser.
     
     try {
-        const { data, content: markdownContent } = matter(content)
+        const { data, content: markdownContent } = matter(content as string)
         const slug = path.split('/').pop()?.replace('.md', '') || ''
         
         return {
