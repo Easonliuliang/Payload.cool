@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://payload.cool/</loc>
+    <loc>https://www.payload.cool/</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://payload.cool/blog</loc>
+    <loc>https://www.payload.cool/blog</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://payload.cool/blog/how-to-format-json</loc>
+    <loc>https://www.payload.cool/blog/how-to-format-json</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://payload.cool/blog/json-formatting-tools-2026</loc>
+    <loc>https://www.payload.cool/blog/json-formatting-tools-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.payload.cool/blog/json-xml-yaml-comparison-guide</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.payload.cool/blog/solve-json-parsing-problems</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
